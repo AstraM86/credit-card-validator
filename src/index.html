@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Credit Card Validator</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Проверка номера карты</h1>
+    <div class="widget">
+      <div class="card-icons">
+        <img class="card-icon visa" src="<%= require('./img/visa.svg') %>" alt="Visa">
+        <img class="card-icon mastercard" src="<%= require('./img/mastercard.svg') %>" alt="MasterCard">
+        <img class="card-icon amex" src="<%= require('./img/amex.svg') %>" alt="American Express">
+        <img class="card-icon discover" src="<%= require('./img/discover.svg') %>" alt="Discover">
+        <img class="card-icon mir" src="<%= require('./img/mir.png') %>" alt="Мир">
+      </div>
+      <form id="card-form">
+        <input type="text" id="card-input" placeholder="Введите номер карты" autocomplete="off">
+        <button type="submit">Click to Validate</button>
+      </form>
+      <div id="message"></div>
+    </div>
+  </div>
+</body>
+</html>
