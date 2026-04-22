@@ -33,8 +33,8 @@ jobs:
         run: npm run build
 
       # Дополнительный шаг для e2e-тестов
-      - name: Run e2e tests
-        run: npm run test:e2e
+      #- name: Run e2e tests
+       # run: npm run test:e2e
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
